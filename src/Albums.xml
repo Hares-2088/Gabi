@@ -1,0 +1,29 @@
+<Library>
+    <Album>
+        <Name>Album1</Name>
+        <SpotifyLink>http:test.com</SpotifyLink>
+        <AppleMusic>http:testAppleMusic.com</AppleMusic>
+        <YTM>http:testYoutubeMusic.com</YTM>
+    </Album>
+
+    <Album>
+        <Name>Album2</Name>
+        <SpotifyLink>http:test.com</SpotifyLink>
+        <AppleMusic>http:testAppleMusic.com</AppleMusic>
+        <YTM>http:testYoutubeMusic.com</YTM>
+    </Album>
+    
+    <Album>
+        <Name>Album3</Name>
+        <SpotifyLink>http:test3.com</SpotifyLink>
+        <AppleMusic>http:testAppleMusic.com</AppleMusic>
+        <YTM>http:testYoutubeMusic.com</YTM>
+    </Album>
+
+    <Album>
+        <Name>Album4</Name>
+        <SpotifyLink>http:test.com</SpotifyLink>
+        <AppleMusic>http:testAppleMusic.com</AppleMusic>
+        <YTM>http:testYoutubeMusic.com</YTM>
+    </Album>
+</Library>
