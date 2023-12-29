@@ -8,7 +8,8 @@ export default function MyNavBar() {
         {
             to:"",
             title:"Home",
-
+        },
+        {
             to:"albums",
             title:"Albums"
         }
