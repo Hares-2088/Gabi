@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { startTransition } from 'react'
+import AlbumList from '../Components/AlbumList'
 
 export default function HomePage() {
   return (
     <div>
-        <p>This is the Home Page where i will put the biographie and other information about Gabi</p>
+      <div className='top_div'>
+      <h1>GABI.</h1>
+      </div>
+      <AlbumList/>
     </div>
   )
 }

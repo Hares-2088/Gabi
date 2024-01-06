@@ -2,12 +2,12 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 
 export default function AlbumCard(props) {
-    const { name, spotify, spotifyLink, appleMusicLink, ytmLink } = props.album;
+    const { name, spotify, appleMusicLink, ytmLink } = props.album;
   
   return (
     <div>
     <iframe
-        style={{ borderRadius: '12px' }} // Use an object here
+        style={{ borderRadius: '20px' }} 
         src={spotify}
         width="100%"
         height="352"

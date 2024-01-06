@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AlbumCard from './AlbumCard';
 import { parseString } from 'xml2js';
-import XMLParser from 'xml2js';
 import { Container, Row } from 'react-bootstrap';
 
 export default function AlbumList() {
@@ -31,7 +30,6 @@ export default function AlbumList() {
                             const albumObject = {
                                 name: name,
                                 spotify: spotify,
-                                spotifyLink: album.Link?.find((link) => link.$.type === 'Spotify')?._ || '',
                                 appleMusicLink: album.Link?.find((link) => link.$.type === 'AppleMusic')?._ || '',
                                 ytmLink: album.Link?.find((link) => link.$.type === 'YTM')?._ || ''
                             };
@@ -56,8 +54,8 @@ export default function AlbumList() {
     }, [albums]);
 
     return (
-        <Container fluid>
-            <h1 className="title">Albums</h1>
+        <Container fluid className='mt-4'>
+            {/* <h1 className="title">Albums</h1> */}
             <Row className='justify-content-evenly'>
 
                 {albums && albums.map((album) =>

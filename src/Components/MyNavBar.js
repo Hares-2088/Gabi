@@ -25,7 +25,7 @@ export default function MyNavBar() {
                     </Navbar.Brand>
                 </LinkContainer> */}
 
-                <Nav className='me-auto fs-4'>
+                <Nav className='fs-4'>
                     {links.map((link) => (
                         <LinkContainer to={`/${link.to}`} key={link.to}>
                             <Nav.Link>{link.title}</Nav.Link>

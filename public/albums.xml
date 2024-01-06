@@ -3,7 +3,6 @@
     <Album>
         <Name>Healing</Name>
         <Spotify>https://open.spotify.com/embed/track/6tove99wE5lrf3P81bShO4?utm_source=generator/</Spotify>
-        <Link type="Spotify">https://open.spotify.com/track/6tove99wE5lrf3P81bShO4</Link>
         <Link type="AppleMusic">http:testAppleMusic.com1</Link>
         <Link type="YTM">http:testYoutubeMusic.com</Link>
     </Album>
@@ -11,7 +10,6 @@
     <Album>
         <Name>Album2</Name>
         <Spotify>https://open.spotify.com/embed/album/7HsKj869Cv6vqlkOaCZaaJ?utm_source=generator</Spotify>
-        <Link type="Spotify">http:test.com</Link>
         <Link type="AppleMusic">http:testAppleMusic.com2</Link>
         <Link type="YTM">http:testYoutubeMusic.com</Link>
     </Album>
@@ -19,7 +17,6 @@
     <Album>
         <Name>Album3</Name>
         <Spotify>https://open.spotify.com/embed/album/6TzLVysx2S82zTkTW82VD9?utm_source=generator</Spotify>
-        <Link type="Spotify">http:test.com</Link>
         <Link type="AppleMusic">http:testAppleMusic.com3</Link>
         <Link type="YTM">http:testYoutubeMusic.com</Link>
     </Album>
@@ -27,7 +24,6 @@
     <Album>
         <Name>Album4</Name>
         <Spotify>https://open.spotify.com/embed/album/1YnPLUpJmE02gsXAFwLy2d?utm_source=generator</Spotify>
-        <Link type="Spotify">http:test.com</Link>
         <Link type="AppleMusic">http:testAppleMusic.com4</Link>
         <Link type="YTM">http:testYoutubeMusic.com</Link>
     </Album>
