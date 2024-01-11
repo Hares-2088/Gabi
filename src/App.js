@@ -13,7 +13,7 @@ export default function App() {
     <>
       <ToastContainer />
       <Router>
-        <MyNavBar />
+        {/* <MyNavBar /> */}
         <Routes>
 
           <Route exact path="/" element={<HomePage />} />

@@ -6,51 +6,51 @@ import { Container, Row } from 'react-bootstrap';
 export default function AlbumList() {
     const [albums, setAlbums] = useState([]);
 
-    useEffect(() => {
-        const fetchXmlData = async () => {
-            try {
-                const response = await fetch('/albums.xml');
-                const xmlData = await response.text();
+    const fetchXmlData = async () => {
+        try {
+            const response = await fetch('/albums.xml');
+            const xmlData = await response.text();
 
-                parseString(xmlData, (err, result) => {
-                    if (err) {
-                        console.error('Error parsing XML:', err);
-                    }
-                    else {
-                        const xmlAlbums = result?.Library?.Album || [];
+            console.log()
 
-                        // Iterate over each album in xmlAlbums
-                        const albumList = xmlAlbums.map((album) => {
+            parseString(xmlData, (err, result) => {
+                if (err) {  
+                    console.error('Error parsing XML:', err);
+                }
+                else {
+                    const xmlAlbums = result?.Library?.Album || [];
 
-                            // Extract properties from each album
-                            const name = album.Name?.[0] || '';
-                            const spotify = album.Spotify?.[0] || '';
+                    // Iterate over each album in xmlAlbums
+                    const albumList = xmlAlbums.map((album) => {
 
-                            // Create an object representing the album
-                            const albumObject = {
-                                name: name,
-                                spotify: spotify,
-                                appleMusicLink: album.Link?.find((link) => link.$.type === 'AppleMusic')?._ || '',
-                                ytmLink: album.Link?.find((link) => link.$.type === 'YTM')?._ || ''
-                            };
+                        // Extract properties from each album
+                        const name = album.Name?.[0] || '';
+                        const spotify = album.Spotify?.[0] || '';
 
-                            return albumObject;
-                        });
+                        // Create an object representing the album
+                        const albumObject = {
+                            name: name,
+                            spotify: spotify,
+                            spotifyLink: album.Link?.find((link) => link.$.type === 'SpotifyLink')?._ || '',
+                            appleMusicLink: album.Link?.find((link) => link.$.type === 'AppleMusic')?._ || '',
+                            ytmLink: album.Link?.find((link) => link.$.type === 'YTM')?._ || ''
+                        };
 
-                        // console.log(albumList);
-                        setAlbums(albumList);
-                    }
-                });
-            } catch (error) {
-                console.error('Error fetching XML:', error);
-            }
-        };
+                        return albumObject;
+                    });
 
-        fetchXmlData();
-    }, []);
+                    // console.log(albumList);
+                    setAlbums(albumList);
+                }
+            });
+        } catch (error) {
+            console.error('Error fetching XML:', error);
+        }
+    };
 
     useEffect(() => {
         console.log(albums);
+        fetchXmlData();
     }, [albums]);
 
     return (
