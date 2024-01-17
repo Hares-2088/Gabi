@@ -26,14 +26,17 @@ export default function AlbumList() {
                         // Extract properties from each album
                         const name = album.Name?.[0] || '';
                         const spotify = album.Spotify?.[0] || '';
+                        const spotifyLink = album.SpotifyLink?.[0] || '';
+                        const appleMusicLink = album.AppleMusic?.[0] || '';
+                        const ytmLink = album.YTM?.[0] || '';
 
                         // Create an object representing the album
                         const albumObject = {
                             name: name,
                             spotify: spotify,
-                            spotifyLink: album.Link?.find((link) => link.$.type === 'SpotifyLink')?._ || '',
-                            appleMusicLink: album.Link?.find((link) => link.$.type === 'AppleMusic')?._ || '',
-                            ytmLink: album.Link?.find((link) => link.$.type === 'YTM')?._ || ''
+                            spotifyLink: spotifyLink,
+                            appleMusicLink: appleMusicLink,
+                            ytmLink: ytmLink
                         };
 
                         return albumObject;

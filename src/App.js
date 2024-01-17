@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Albums from "./Pages/Albums";
 import Footer from "./Pages/Footer";
 
+
 export default function App() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function App() {
 
         </Routes>
       </Router>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

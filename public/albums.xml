@@ -3,32 +3,49 @@
     <Album>
         <Name>Healing</Name>
         <Spotify>https://open.spotify.com/embed/track/6tove99wE5lrf3P81bShO4?utm_source=generator/</Spotify>
-        <Link type="SpotifyLink">http:testAppleMusic.com1</Link>
-        <Link type="AppleMusic">http:testAppleMusic.com1</Link>
-        <Link type="YTM">http:testYoutubeMusic.com</Link>
+        <SpotifyLink>https://open.spotify.com/track/6tove99wE5lrf3P81bShO4?go=1&amp;sp_cid=a4bf441f38b2bc323ae46b2a0bc40370&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=db104f0aeafd43f2</SpotifyLink>
+        <AppleMusic>https://music.apple.com/ca/album/healing-single/1700469556</AppleMusic>
+        <YTM>https://music.youtube.com/watch?v=O-D9Uw8Mtzo</YTM>
     </Album>
 
     <Album>
         <Name>Life do us Part</Name>
         <Spotify>https://open.spotify.com/embed/album/7HsKj869Cv6vqlkOaCZaaJ?utm_source=generator</Spotify>
-        <Link type="SpotifyLink">http:testAppleMusic.com1</Link>
-        <Link type="AppleMusic">http:testAppleMusic.com2</Link>
-        <Link type="YTM">http:testYoutubeMusic.com</Link>
+        <SpotifyLink>https://open.spotify.com/album/7HsKj869Cv6vqlkOaCZaaJ?go=1&amp;sp_cid=a4bf441f38b2bc323ae46b2a0bc40370&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=aa9d0dabd5a44805</SpotifyLink>
+        <AppleMusic>https://music.apple.com/ca/album/life-do-us-part/1659318574?i=1659318575</AppleMusic>
+        <YTM>http:testYoutubeMusic.com</YTM>
     </Album>
     
     <Album>
         <Name>1 800 LOVE TALKS</Name>
         <Spotify>https://open.spotify.com/embed/album/6TzLVysx2S82zTkTW82VD9?utm_source=generator</Spotify>
-        <Link type="SpotifyLink">http:testAppleMusic.com1</Link>
-        <Link type="AppleMusic">http:testAppleMusic.com3</Link>
-        <Link type="YTM">http:testYoutubeMusic.com</Link>
+        <SpotifyLink>https://open.spotify.com/album/6TzLVysx2S82zTkTW82VD9?go=1&amp;sp_cid=a4bf441f38b2bc323ae46b2a0bc40370&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=55c7c8c870d14096</SpotifyLink>
+        <AppleMusic>https://music.apple.com/ca/album/1-800-love-talks/1706954447?i=1706954448</AppleMusic>
+        <YTM>https://music.youtube.com/watch?v=yXvtziDbW7U</YTM>
     </Album>
 
     <Album>
         <Name>Lemonade</Name>
         <Spotify>https://open.spotify.com/embed/album/1YnPLUpJmE02gsXAFwLy2d?utm_source=generator</Spotify>
-        <Link type="SpotifyLink">http:testAppleMusic.com1</Link>
-        <Link type="AppleMusic">http:testAppleMusic.com4</Link>
-        <Link type="YTM">http:testYoutubeMusic.com</Link>
+        <SpotifyLink>https://open.spotify.com/album/1YnPLUpJmE02gsXAFwLy2d?go=1&amp;sp_cid=a4bf441f38b2bc323ae46b2a0bc40370&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=6d174814bf7c4503</SpotifyLink>
+        <AppleMusic>https://music.apple.com/ca/album/lemonade/1704276499?i=1704276500</AppleMusic>
+        <YTM>https://music.youtube.com/watch?v=zJC4zjn0GV8</YTM>
     </Album>
+
+    <Album>
+        <Name>WHERE R U NOW</Name>
+        <Spotify>https://open.spotify.com/embed/track/5GGqjxKZX68MEIQZa9ja5l?utm_source=generator</Spotify>
+        <SpotifyLink></SpotifyLink>
+        <AppleMusic></AppleMusic>
+        <YTM></YTM>
+    </Album>
+
+        <Album>
+        <Name>Healing</Name>
+        <Spotify>https://open.spotify.com/embed/track/6tove99wE5lrf3P81bShO4?utm_source=generator/</Spotify>
+        <SpotifyLink>https://open.spotify.com/track/6tove99wE5lrf3P81bShO4?go=1&amp;sp_cid=a4bf441f38b2bc323ae46b2a0bc40370&amp;utm_source=embed_player_p&amp;utm_medium=desktop&amp;nd=1&amp;dlsi=db104f0aeafd43f2</SpotifyLink>
+        <AppleMusic>https://music.apple.com/ca/album/healing-single/1700469556</AppleMusic>
+        <YTM>https://music.youtube.com/watch?v=O-D9Uw8Mtzo</YTM>
+    </Album>
+
 </Library>
