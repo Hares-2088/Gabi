@@ -3,8 +3,6 @@ import { faMusic } from '@fortawesome/free-solid-svg-icons'
 import { faSpotify, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
-import anime from 'animejs/lib/anime.es.js';
-import { useInView } from 'react-intersection-observer';
 
 export default function AlbumCard(props) {
   const { name, spotify, spotifyLink, appleMusicLink, ytmLink } = props.album;
