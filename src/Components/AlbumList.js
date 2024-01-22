@@ -29,9 +29,11 @@ export default function AlbumList() {
                         const spotifyLink = album.SpotifyLink?.[0] || '';
                         const appleMusicLink = album.AppleMusic?.[0] || '';
                         const ytmLink = album.YTM?.[0] || '';
+                        const id = album.Id?.[0] || '';
 
                         // Create an object representing the album
-                        const albumObject = {
+                    const albumObject = {
+                            id: id,
                             name: name,
                             spotify: spotify,
                             spotifyLink: spotifyLink,
@@ -62,7 +64,7 @@ export default function AlbumList() {
             <Row className='justify-content-evenly'>
 
                 {albums && albums.map((album) =>
-                    <AlbumCard key={album.name}
+                    <AlbumCard key={album.id}
                         album={album} />
                 )}
 

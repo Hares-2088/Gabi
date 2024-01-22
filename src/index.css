@@ -92,14 +92,15 @@ a, a:hover, a:focus, a:active {
   bottom: 0;
 } */
 
-.LinkContainer{
+.LinkContainer {
   font-size: 200%;
-  padding-bottom: 3vh;
   position: absolute;
-  bottom: 0.5vh;
-  left: 27.5%;
-  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 1.5vh;
+  bottom: 0.3vh;
 }
+
 
 /* Default style for all screen sizes */
 .links {
