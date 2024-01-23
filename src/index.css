@@ -99,12 +99,16 @@ a, a:hover, a:focus, a:active {
   transform: translate(-50%, -50%);
   padding-bottom: 1.5vh;
   bottom: 0.3vh;
+  right: 0; /* Align the links to the right side of the screen */
 }
 
 
 /* Default style for all screen sizes */
 .links {
   margin: 6vh;
+}
+.containerCenter{
+  text-align: center;
 }
 
 /* Media query for screens with a maximum width of 599px (phones) */
@@ -117,10 +121,23 @@ a, a:hover, a:focus, a:active {
   .LinkContainer {
     font-size: 160%;
     position: absolute;
-    left: 35vh;
-    bottom: 45vh;
-    right: 0;
+    top: 35vh;
+    text-align: right; /* Align the links to the right side of the screen */
+    margin-left: 17.5vh;
+  }
+  .containerCenter{
+    text-align: right;
   }
 }
 
+@media screen and (max-width: 1500px) {
+
+  .links {
+    margin: 3vh;
+  }
+
+  .LinkContainer {
+    max-width: 120%;
+  }
+}
 

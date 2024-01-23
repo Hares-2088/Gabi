@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* <div className='arrow-container' onClick={() => scrollToBottom()}>
           <FontAwesomeIcon icon={faCircleDown} className='arrowDown' />
         </div> */}
-        <div style={{textAlign: 'center'}}>
+        <div className='containerCenter'>
           <div className='LinkContainer'>
             <a href="" className='links'><FontAwesomeIcon icon={faFacebook} beat /></a>
             <a href="" className='links'><FontAwesomeIcon icon={faTwitter} beat /></a>
