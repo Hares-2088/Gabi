@@ -68,30 +68,6 @@ a, a:hover, a:focus, a:active {
   transform: translateX(10px) translateY(-8px);
   transition: transform 0.2s, box-shadow 0.2s;
 }
-/* .arrow-container {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-.arrow-container:hover{
-  transform: translateY(20%);
-}
-.arrowDown{
-  font-size: 350%;
-  padding-bottom: 3vh;
-} */
-/* footer {
-  background-color: rgb(0, 166, 255);
-  font-size: 150%;
-  text-align: center;
-  padding: 0.5vh;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-} */
-
 .LinkContainer {
   font-size: 200%;
   position: absolute;
@@ -116,6 +92,11 @@ a, a:hover, a:focus, a:active {
   .links {
     display: block; /* Ensure links are displayed as block elements (one on top of the other) */
     margin: 4vh;
+  }
+  
+  .top_div {
+    background-size: contain; /* Ensure the whole image fits on the screen */
+    background-position: top center; /* Keep the image centered */
   }
 
   .LinkContainer {

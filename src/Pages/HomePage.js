@@ -8,21 +8,11 @@ import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free
 
 export default function HomePage() {
 
-  // const scrollToBottom = () => {
-  //   window.scrollTo({
-  //     top: document.body.scrollHeight,
-  //     behavior: 'smooth',
-  //   });
-  // };
-
   return (
     <div>
       <div className='top_div'>
         <h1 className='main_title'>G  A  B  I.</h1>
 
-        {/* <div className='arrow-container' onClick={() => scrollToBottom()}>
-          <FontAwesomeIcon icon={faCircleDown} className='arrowDown' />
-        </div> */}
         <div className='containerCenter'>
           <div className='LinkContainer'>
             <a href="" className='links'><FontAwesomeIcon icon={faFacebook} beat /></a>

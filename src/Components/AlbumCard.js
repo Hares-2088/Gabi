@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic } from '@fortawesome/free-solid-svg-icons'
 import { faSpotify, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function AlbumCard(props) {
