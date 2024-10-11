@@ -6,11 +6,48 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faSpotify, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function HomePage() {
+  const [artist, setArtist] = useState(null);
+
+  const fetchXmlData = async () => {
+    try {
+      const response = await fetch('/albums.xml');
+      const xmlData = await response.text();
+
+      parseString(xmlData, (err, result) => {
+        if (err) {
+          console.error('Error parsing XML:', err);
+        } else {
+          const artistData = result?.Library?.Artist?.[0];  // Fetch the first artist object
+          if (artistData) {
+            const mappedArtist = {
+              name: artistData?.Name?.[0] || '',
+              spotifyProfile: artistData?.SpotifyProfile?.[0] || '',
+              facebookProfile: artistData?.FacebookProfile?.[0] || '',
+              instagramProfile: artistData?.InstagramProfile?.[0] || '',
+              twitterProfile: artistData?.TwitterProfile?.[0] || '',
+              mail: artistData?.Mail?.[0] || ''
+            };
+            setArtist(mappedArtist);
+          }
+        }
+      });
+    } catch (error) {
+      console.error('Error fetching XML:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchXmlData();
+  }, []);
+
+  if (!artist) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
       <div className='top_div'>
-        <h1 className='main_title'>G  A  B  I.</h1>
+        <h1 className='main_title'>{artist.name}</h1>
         <div className='containerCenter'>
           <div className='LinkContainer'>
             <a href={artist.facebookProfile} className='links'>
