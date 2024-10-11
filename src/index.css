@@ -25,7 +25,7 @@ a, a:hover, a:focus, a:active {
 .main_title{
   text-align: center;
   padding-top: 7vh;
-  font-size: 1000%;
+  font-size: 10vw; /* Adjust this to fit smaller screens */
   background-color: white;
   color: transparent;
   background-clip: text;
@@ -36,7 +36,7 @@ a, a:hover, a:focus, a:active {
   width: 100vw;
   height: 100vh;
   background-image: url('../public/images/Background.png'); /* Assuming the images folder is in the public folder */
-  background-size: 200vh; /* or 'contain' depending on your preference */
+  background-size: cover; /* or 'contain' depending on your preference */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   position: relative; /* Ensure positioning works as expected */
@@ -97,6 +97,38 @@ a, a:hover, a:focus, a:active {
   width: max-content;
 }
 
+/* Media query for really small screens (iPhone, smaller smartphones) */
+@media screen and (max-width: 400px) {
+  .LinkContainer {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of the links */
+    justify-content: center; /* Center the links horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  }
+
+  .links {
+    margin: 0 1vh; /* Reduce margin between the links */
+    font-size: 5vw; /* Make the font size smaller to fit the screen */
+    flex-shrink: 0; /* Prevent links from shrinking too small */
+    white-space: nowrap; /* Ensure the text does not wrap */
+  }
+
+  .main_title {
+    font-size: 8vw; /* Adjust title font-size to fit small screens */
+    padding-top: 5vh;
+  }
+
+  .top_div {
+    width: 100vw; /* Full width for background */
+    height: 100vh; /* Full height for background */
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
 /* Media query for screens with a maximum width of 599px (phones) */
 @media screen and (max-width: 599px) {
   .LinkContainer {
@@ -104,9 +136,10 @@ a, a:hover, a:focus, a:active {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-bottom: 2.5vh;
     bottom: 0.3vh;
     width: max-content;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
   
     .links {
@@ -123,14 +156,16 @@ a, a:hover, a:focus, a:active {
   }
 
   .top_div {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../public/images/Background.png'); /* Need to put the background picture in the image folder and name it background.pn */
-    background-size: 210vh; /* or 'contain' depending on your preference */
-    background-position:-95vh; /* Center the background image */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    background-image: url('../public/images/Background.png'); /* Assuming the images folder is in the public folder */
+    background-size: cover;
+    background-position:center;
     background-repeat: no-repeat; /* Prevent the image from repeating */
     position: relative; /* Ensure positioning works as expected */
-    mix-blend-mode:multiply;
+    object-fit: cover;
   }
 }
 

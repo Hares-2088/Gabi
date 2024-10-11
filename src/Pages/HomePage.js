@@ -46,6 +46,9 @@ export default function HomePage() {
 
   return (
     <div>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <div className='top_div'>
         <h1 className='main_title'>{artist.name}</h1>
         <div className='containerCenter'>
