@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Library>
+
+    <Artist>
+        <Name>G  A  B  I.</Name>
+        <SpotifyProfile>https://open.spotify.com/artist/7GJYItBw6A5skqnKs9Bbrz</SpotifyProfile>
+        <FacebookProfile></FacebookProfile>
+        <InstagramProfile>https://www.instagram.com/Nineteen.ninety.v</InstagramProfile>
+        <TwitterProfile></TwitterProfile>
+        <Mail></Mail>
+    </Artist>
     <Album>
         <Id>1</Id>
         <Name>Healing</Name>
